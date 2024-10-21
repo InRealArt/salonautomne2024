@@ -22,7 +22,7 @@ const useCatalogueRequest = () => {
       console.log('phone : ', phone)
       let msgError = ''
 
-      const { error } = await supabase
+      const { error, status, statusText, data } = await supabase
           .from(table)
           .insert({ email: email, name: name, phone: phone })
       if (error?.code == CODE_UNIQUE_KEY_VIOLATION) {
@@ -33,6 +33,12 @@ const useCatalogueRequest = () => {
             console.log("error")
             throw error  
           }  
+          else {
+            console.log("Insertion OK")
+            console.log("status : ", status)
+            console.log("statusTExt : ", statusText)
+            console.log("data : ", data)
+          }
       }
       return msgError
     }
