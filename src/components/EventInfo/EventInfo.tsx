@@ -1,4 +1,5 @@
 import styles from './EventInfo.module.scss';
+import Link from "next/link";
 
 export default function EventInfo() {
   return (
@@ -12,7 +13,9 @@ export default function EventInfo() {
       </div>
       <div className={styles.button}>
         <div className={styles.buttonText}>
-          Téléchargez gratuitement le catalogue exclusif
+          <Link href={`#catalogueRequest`}>
+            Téléchargez gratuitement le catalogue exclusif
+          </Link>  
         </div>
       </div>
     </div>

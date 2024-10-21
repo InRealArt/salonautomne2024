@@ -16,7 +16,7 @@ const CatalogueRequest = () => {
   const {email, setEmail, name, setName, phone, setPhone, isEmailValid, validateEmail, handleChangeEmail, handleChangeName, handleChangePhone, handleSubmitCatchpaForm} = useCatalogueRequest()
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="catalogueRequest">
       <div className={styles.imageSection}>
         <Image
           src="/img/catalogueRequest/inrealartCatalogue.jpg"
