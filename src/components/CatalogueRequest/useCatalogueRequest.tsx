@@ -38,6 +38,15 @@ const useCatalogueRequest = () => {
             console.log("status : ", status)
             console.log("statusTExt : ", statusText)
             console.log("data : ", data)
+            // Popup a succes toast if no errors.
+            toast({
+              title: "Merci pour votre participation. Nous vous contacterons très prochainement.",
+              description: '',
+              status: 'success',
+              duration: 3000,
+              isClosable: true,
+            })
+
           }
       }
       return msgError
