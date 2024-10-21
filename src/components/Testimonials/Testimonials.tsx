@@ -32,11 +32,11 @@ const Testimonials = () => {
               </span>
               <span
                 className={styles.artistText13}>
-                Class. indice
+                Class. Style contemporain
               </span>
               <span
                 className={styles.artistText14}>
-                 TOP 7 I-CAC
+                 TOP 4 I-CAC
                 <br />
               </span>
             </span>
@@ -61,7 +61,7 @@ const Testimonials = () => {
                 <br />
                 <br />
               </span>
-              <span className={styles.artistText22}> Class. indice </span>
+              <span className={styles.artistText22}> Class. Style contemporain</span>
               <span className={styles.artistText23}>
                  TOP 17 I-CAC
               </span>
