@@ -34,6 +34,7 @@
   margin: 0 auto;
   padding: 1rem;
   gap: 60px;
+  background-color: #f3f1ff !important;
   background: var(--hex, rgba(225, 229, 255, 0.45));
 }
 
