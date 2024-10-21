@@ -24,6 +24,7 @@
 
 .statItem {
   flex: 1 1 calc(25% - 15px);
+  background-color: #F5F4F4;
   min-width: 200px; // Définit une largeur minimale
   max-width: calc(25% - 15px);
   border-radius: 1.25rem;

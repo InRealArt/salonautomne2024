@@ -17,13 +17,13 @@
   
   .formSection {
     flex: 1;
-    background-color: #6b7cb4;
+    background-color: #F5F4F4;
     padding: 40px;
     color: white;
   }
   
   .title {
-    color: var(--primaire-white, #f6f8ff);
+    color: black;
     text-align: left;
     font-family: var(
       --heading-h1-font-family,
@@ -37,7 +37,7 @@
   }
   
   .subtitle {
-    color: var(--color-5, #ffffff);
+    color: black;
     text-align: left;
     font-family: var(--heading-text-paragraphe-font-family, "Montserrat", sans-serif);
     font-size: var(--heading-text-paragraphe-font-size, 1rem);
