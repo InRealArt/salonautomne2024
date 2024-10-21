@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
       <div className={styles.cardsContainer}>
         <div className={styles.card}>
           <div className={styles.imageContainer}>
-            <Gem size={20} color="#3C4ED7" />
+            <Gem size={20} color="black" />
           </div>
 
           <div className={styles.cardTitle}>Very Rare</div>
@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.imageContainer}>
-            <ThumbsUp size={20} color="#3C4ED7" />
+            <ThumbsUp size={20} color="black" />
           </div>
           <div className={styles.cardTitle}>Une Marketplace Unique</div>
 
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.imageContainer}>
-            <CircleDollarSign size={20} color="#3C4ED7" />
+            <CircleDollarSign size={20} color="black" />
           </div>
           <div className={styles.cardTitle}>Opportunité d'Investissement</div>
           <div className={styles.cardText}>
