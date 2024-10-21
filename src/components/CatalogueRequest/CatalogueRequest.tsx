@@ -27,15 +27,15 @@ const CatalogueRequest = () => {
         />
       </div>
       <div className={styles.formSection}>
-        <h2 className={styles.title}>Catalogue Salon D'automne 2024</h2>
+        <h2 className={styles.title}>Catalogue Salon d'Automne 2024</h2>
         <p className={styles.subtitle}>
           Explorez une collection unique de toiles physiques,
           de leurs copies numériques (NFT), accompagnées de leurs
           droits d'auteur.
         </p>
-        <FormControl color={'white'}>
+        <FormControl color={'black'}>
           <div className={styles.formLabel}>
-            <FormLabel color={'white'}>Nom *</FormLabel>
+            <FormLabel color={'black'}>Nom *</FormLabel>
             <Input type='email' color={'grey'} backgroundColor={'white'} 
             placeholder='John Iloveart' 
             focusBorderColor='white'
@@ -44,7 +44,7 @@ const CatalogueRequest = () => {
             />
           </div>
           <div className={styles.formLabel}>
-            <FormLabel color={'white'}>Email *</FormLabel>
+            <FormLabel color={'black'}>Email *</FormLabel>
               <Input type='email' color={'grey'} backgroundColor={'white'} 
               placeholder='e-mail' 
               focusBorderColor='white'
@@ -53,7 +53,7 @@ const CatalogueRequest = () => {
               />
           </div>  
           <div className={styles.formLabel}>
-            <FormLabel color={'white'}>Mobile</FormLabel>
+            <FormLabel color={'black'}>Mobile</FormLabel>
             <Input type='email' color={'grey'} backgroundColor={'white'} 
             placeholder='+33696563254' 
             focusBorderColor='white'

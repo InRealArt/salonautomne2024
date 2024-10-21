@@ -4,6 +4,9 @@
     border-radius: 15px;
     overflow: hidden;
     margin: 20px 0;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.0625rem;
   }
   
   .imageSection {
@@ -77,7 +80,7 @@
   
   .submitButton {
     background-color: white;
-    color: #6b7cb4;
+    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
