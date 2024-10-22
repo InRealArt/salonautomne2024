@@ -10,7 +10,7 @@ const CatalogueStats = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Le catalogue InRealArt c'est</h2>
+      <h2 className={styles.title}>{parse(i18n[language].stats.title)}</h2>
       <div className={styles.statsContainer}>
         <div className={styles.statItem}>
           <div className={styles.statNumber}>15 +</div>
