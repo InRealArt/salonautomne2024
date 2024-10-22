@@ -73,6 +73,9 @@ export interface I18nContextType {
       whyChooseUS: {
         title: string,
         subTitle: string,
+        cardTitle1: string,
+        cardTitle2: string,
+        cardTitle3: string,
         cardText1: string,
         cardText2: string,
         cardText3: string,
@@ -182,6 +185,9 @@ const i18n: I18nContextType['i18n'] = {
       The rarity of the pieces on offer offers potential for appreciation. Whether
       whether you&#039;re a novice or an expert, you&#039;re entering a market where art can become
       become a source of lasting value.`,
+      cardTitle1: 'Very Rare',
+      cardTitle2: 'A Unique Marketplace',
+      cardTitle3: 'Investment opportunity'
     },
     testimonials: {
       title: `Testimonials`,
@@ -284,7 +290,9 @@ const i18n: I18nContextType['i18n'] = {
       La rareté des pièces proposées offre un potentiel d&#039;appréciation. Que
       vous soyez novice ou expert, vous accédez à un marché où l&#039;art peut
       devenir une source de valorisation durable.`,
-
+      cardTitle1: 'Very Rare',
+      cardTitle2: 'Une Marketplace Unique',
+      cardTitle3: "Opportunité d'Investissement"
     },
     testimonials: {
       title: `Témoignages`,
