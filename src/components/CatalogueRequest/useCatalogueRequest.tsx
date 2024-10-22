@@ -4,8 +4,13 @@ import parse from 'html-react-parser'
 import { supabase } from "@/utils/supabase/supabaseConnection"
 import { CODE_UNIQUE_KEY_VIOLATION, SALON_AUTOMNE_2024_TABLE } from "@/utils/supabase/constants"
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
+import { I18nContext } from '@/i18n-context';
+import { useContext } from 'react';
+
 
 const useCatalogueRequest = () => {
+    const { language, i18n } = useContext(I18nContext)
+
     const toast = useToast()
     const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -96,7 +101,7 @@ const useCatalogueRequest = () => {
         console.log("email invalid")
         // Popup a succes toast if no errors.
         toast({
-          title: "E-mail is not in the correct format",
+          title: parse(i18n[language].toast.errorEmail),
           description: '',
           status: 'error',
           duration: 3000,
@@ -114,7 +119,7 @@ const useCatalogueRequest = () => {
       if (!isNameValid()) {
         // Popup an error if name is empty
         toast({
-          title: "Name is required",
+          title: parse(i18n[language].toast.errorName),
           description: '',
           status: 'error',
           duration: 3000,

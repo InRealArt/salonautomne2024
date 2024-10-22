@@ -9,11 +9,17 @@ import {
   FormErrorMessage,
   Button,
 } from "@chakra-ui/react";
+import { I18nContext } from '@/i18n-context';
+import { useContext } from 'react';
+import parse from 'html-react-parser';
+
 
 import useCatalogueRequest from './useCatalogueRequest';
 
 const CatalogueRequest = () => {
   const { email, setEmail, name, setName, phone, setPhone, isEmailValid, validateEmail, handleChangeEmail, handleChangeName, handleChangePhone, handleSubmitCatchpaForm } = useCatalogueRequest()
+
+  const { language, i18n } = useContext(I18nContext)
 
   return (
     <div className={styles.container} id="catalogueRequest">
@@ -26,15 +32,13 @@ const CatalogueRequest = () => {
         objectFit="contain"
       />
       <div className={styles.formSection}>
-        <h2 className={styles.title}>Catalogue Salon d'Automne 2024</h2>
+        <h2 className={styles.title}>{parse(i18n[language].catalogueRequest.title)}</h2>
         <p className={styles.subtitle}>
-          Explorez une collection unique de toiles physiques,
-          de leurs copies numériques (NFT), accompagnées de leurs
-          droits d'auteur.
+          {parse(i18n[language].catalogueRequest.subTitle)}
         </p>
         <FormControl color={'black'}>
           <div className={styles.formLabel}>
-            <FormLabel color={'black'}>Nom *</FormLabel>
+            <FormLabel color={'black'}>{parse(i18n[language].catalogueRequest.formItem1)} *</FormLabel>
             <Input type='email' color={'grey'} backgroundColor={'white'}
               placeholder='John Iloveart'
               focusBorderColor='white'
@@ -43,7 +47,7 @@ const CatalogueRequest = () => {
             />
           </div>
           <div className={styles.formLabel}>
-            <FormLabel color={'black'}>Email *</FormLabel>
+            <FormLabel color={'black'}>{parse(i18n[language].catalogueRequest.formItem2)} *</FormLabel>
             <Input type='email' color={'grey'} backgroundColor={'white'}
               placeholder='e-mail'
               focusBorderColor='white'
@@ -52,7 +56,7 @@ const CatalogueRequest = () => {
             />
           </div>
           <div className={styles.formLabel}>
-            <FormLabel color={'black'}>Mobile</FormLabel>
+            <FormLabel color={'black'}>{parse(i18n[language].catalogueRequest.formItem3)}</FormLabel>
             <Input type='email' color={'grey'} backgroundColor={'white'}
               placeholder='+33696563254'
               focusBorderColor='white'
@@ -79,7 +83,7 @@ const CatalogueRequest = () => {
         }
 
         <button className={styles.submitButton} onClick={handleSubmitCatchpaForm}>
-          Recevoir le catalogue
+          {parse(i18n[language].catalogueRequest.button)}
         </button>
       </div>
     </div>

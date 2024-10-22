@@ -90,6 +90,18 @@ export interface I18nContextType {
       ,
       partners: {
         title: string
+      },
+      catalogueRequest: {
+        title: string,
+        subTitle: string,
+        formItem1:string,
+        formItem2:string,
+        formItem3:string,
+        button: string
+      },
+      toast: {
+        errorEmail: string,
+        errorName: string
       }
     };
   };
@@ -199,6 +211,18 @@ const i18n: I18nContextType['i18n'] = {
     },
     partners: {
       title: `They trust us`
+    },
+    catalogueRequest: {
+      title: "Catalog Salon d'Automne 2024",
+      subTitle: 'Explore a unique collection of physical canvases, their digital copies (NFT) and their copyrights.',
+      formItem1: 'Name',
+      formItem2: 'Email',
+      formItem3: 'Phone',
+      button: 'Get the catalog'
+    },
+    toast: {
+      errorEmail: 'E-mail is not in the correct format',
+      errorName: 'Name is mandatory'
     }
   },
   fr: {
@@ -214,7 +238,7 @@ const i18n: I18nContextType['i18n'] = {
     artist: {
       title: `“Ce que vous voyez vous rend heureux, tout est là” <br> Catherine Sénéchal`,
       text1: ``,
-      text2: `Découvrez l'univers raffiné de Catherine Sénéchal, artiste contemporaine qui marie audace et élégance. Ses œuvres vibrantes et intuitives captivent par leur richesse visuelle et leur sincérité. Inspirée par Brancusi, elle propose une expérience sensorielle unique, où tradition et modernité se rencontrent. Acquérir une pièce de Catherine, c'est entrer dans un cercle exclusif de l&#039;art contemporain, alliant émotion et rareté.`, 
+      text2: `Découvrez l'univers raffiné de Catherine Sénéchal, artiste contemporaine qui marie audace et élégance. Ses œuvres vibrantes et intuitives captivent par leur richesse visuelle et leur sincérité. Inspirée par Brancusi, elle propose une expérience sensorielle unique, où tradition et modernité se rencontrent. Acquérir une pièce de Catherine, c'est entrer dans un cercle exclusif de l&#039;art contemporain, alliant émotion et rareté.`,
     },
     expert: {
       title: `Sénéchal considère les couleurs comme un symbole de joie, de vie et d’énergie <br>...`,
@@ -305,6 +329,18 @@ const i18n: I18nContextType['i18n'] = {
     },
     partners: {
       title: `Ils nous font confiance`
+    },
+    catalogueRequest: {
+      title: "Catalogue Salon d'Automne 2024",
+      subTitle: "Explorez une collection unique de toiles physiques, de leurs copies numériques (NFT), accompagnées de leurs droits d'auteur.",
+      formItem1: 'Nom',
+      formItem2: 'Email',
+      formItem3: 'Tél.',
+      button: 'Recevoir le catalogue'
+    },
+    toast: {
+      errorEmail: "Le format de l'e-mail est incorrect",
+      errorName: "Le nom est obligatoire"
     }
   },
 };
