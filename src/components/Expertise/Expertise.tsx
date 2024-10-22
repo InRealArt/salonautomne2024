@@ -5,7 +5,7 @@ import styles from './Expertise.module.scss';
 const Expertise = () => {
   return (
     <div className={styles.container}>
-      <img className={styles.expert} src="/img/expertise/c_meulemans.jpg" />
+      <img className={styles.expert} src="/img/expertise/c_meulemans.png" />
       <div className={styles.containerExpert}>
         <div className={styles.expertTitleWords}>
           <div className={styles.expertTitle}>Le mot de notre experte</div>

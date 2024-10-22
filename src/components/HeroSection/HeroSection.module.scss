@@ -1,7 +1,7 @@
 .header {
   position: relative;
   width: 100%;
-  height: 50vh; 
+  min-height: 430px;
   color: white;
   overflow: hidden;
   border-radius: 30px;
@@ -12,13 +12,13 @@
 }
 
 .content {
+  display: flex;
   position: absolute;
+  align-items: center;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
-  flex-direction: column;
   padding: 1rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
 }
@@ -87,7 +87,8 @@
 }
 
 @media (max-width: 800px) {
-  .middleRow {
+  .content {
+    gap: 0;
     flex-direction: column;
   }
 
@@ -98,6 +99,6 @@
 
   .title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }

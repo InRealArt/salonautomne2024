@@ -19,15 +19,11 @@ const Testimonials = () => {
             <div className={styles.artist1}>François Boucheix</div>
           </div>
           <div className={styles.artistText1}>
-            <span>
               <span className={styles.artistText11}>
                 “Avec InRealArt, je peux porter le Rêve au sommet de son art et
                 transmettre mon héritage de manière intemporelle à travers ces
                 toiles. C&#039;est une opportunité unique de fusionner tradition
                 et innovation, offrant une nouvelle dimension à mon travail.”
-                <br />
-              </span>
-              <span className={styles.artistText12}>
                 <br />
               </span>
               <span
@@ -39,7 +35,6 @@ const Testimonials = () => {
                  TOP 4 I-CAC
                 <br />
               </span>
-            </span>
           </div>
         </div>
       </div>

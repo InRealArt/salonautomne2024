@@ -4,7 +4,6 @@ import ImageHeader from '@/components/HeroSection/HeroSection';
 import EventInfo from '@/components/EventInfo/EventInfo';
 import ArtistProfile from '@/components/ArtistProfile/ArtistProfile';
 
-
 import Logo from '@/components/Header/Header';
 import Expertise from '@/components/Expertise/Expertise';
 import CatalogueStats from '@/components/CatalogueStats/CatalogueStats';

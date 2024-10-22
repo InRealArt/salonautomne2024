@@ -12,29 +12,6 @@
   position: relative;
 }
 
-.wrapperText {
-  display: flex;
-  flex-direction: column;
-  gap: 0rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 35.5625rem;
-  height: 3rem;
-  position: relative;
-}
-
-.titleContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 0.625rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
-
 .title {
   color: black;
   text-align: left;
@@ -43,18 +20,15 @@
   letter-spacing: -0.03125rem;
   font-weight: 400;
   position: relative;
-  width: 34.9375rem;
+  text-align: center;
 }
 
 .partnersLogo {
   display: flex;
   flex-direction: row;
-  gap: 11.875rem;
   align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
+  justify-content: space-around;
+  width: 80%;
 }
 
 .partner1, .partner2 {
@@ -80,5 +54,6 @@
   @media (max-width: 768px) {
     .partnersLogo {
       flex-direction: column;
+      gap: 50px;
     }
   }

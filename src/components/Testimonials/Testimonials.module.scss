@@ -96,7 +96,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  height: 10.6875rem;
   position: relative;
 }
 .title2 {
@@ -131,42 +130,28 @@
 }
 .artistText11 {
   color: #000000;
-  font-family: var(
-    --heading-text-paragraphe-font-family,
-    "Montserrat",
-    sans-serif
-  );
+  font-family: var(--heading-text-paragraphe-font-family, "Montserrat", sans-serif);
   font-size: var(--heading-text-paragraphe-font-size, 16px);
   font-weight: var(--heading-text-paragraphe-font-weight, 400);
   font-style: var(--heading-text-paragraphe-font-style-italic);
+  margin-bottom: 20px;
+  display: block;
 }
 .artistText12 {
   color: #000000;
-  font-family: var(
-    --heading-text-paragraphe-font-family,
-    "Montserrat",
-    sans-serif
-  );
+  font-family: var(--heading-text-paragraphe-font-family, "Montserrat", sans-serif);
   font-size: var(--heading-text-paragraphe-font-size, 16px);
   font-weight: var(--heading-text-paragraphe-font-weight, 400);
 }
 .artistText13 {
   color: #000000;
-  font-family: var(
-    --heading-text-paragraphe-font-family,
-    "Montserrat",
-    sans-serif
-  );
+  font-family: var(--heading-text-paragraphe-font-family, "Montserrat", sans-serif);
   font-size: var(--heading-text-paragraphe-font-size, 16px);
   font-weight: var(--heading-text-paragraphe-font-weight, 400);
 }
 .artistText14 {
   color: #000000;
-  font-family: var(
-    --heading-text-paragraphe-font-family,
-    "Montserrat",
-    sans-serif
-  );
+  font-family: var(--heading-text-paragraphe-font-family, "Montserrat", sans-serif);
   font-size: var(--heading-text-paragraphe-font-size, 16px);
   font-weight: var(--heading-text-paragraphe-font-weight, 400);
 }
@@ -241,6 +226,8 @@
   font-size: var(--heading-text-paragraphe-font-size, 16px);
   font-weight: var(--heading-text-paragraphe-font-weight, 400);
   font-style: var(--heading-text-paragraphe-font-style-italic);
+  margin-bottom: 20px;
+  display: block;
 }
 .artistText22 {
   color: #000000;
@@ -287,7 +274,6 @@
     width: 100%;
     font-size: 0.9rem;
   }
-
 }
 
 @media (max-width: 768px) {

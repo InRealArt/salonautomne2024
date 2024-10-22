@@ -1,7 +1,13 @@
+"use client";
+
 import Image from 'next/image';
 import styles from './HeroSection.module.scss';
+import { I18nContext } from '@/i18n-context';
+import { useContext } from 'react';
 
 export default function ImageHeader() {
+  const { language, i18n } = useContext(I18nContext);
+
   return (
     <div className={styles.header}>
       <Image
@@ -14,18 +20,16 @@ export default function ImageHeader() {
         className={styles.backgroundImage}
       />
       <div className={styles.content}>
-        <div className={styles.middleRow}>
-          <div className={styles.imageContainer}>
-            <Image
-              src="/img/heroSection/salon_automne.jpg"
-              alt="Ticket Salon d'Automne 2024"
-              width={400}
-              height={200}
-            />
-          </div>
-          <div className={styles.title}>
-            Télécharger notre catalogue Salon d’Automne 2024 Un programme exclusif avec
-            l’artiste Catherine Sénéchal et InReal Art</div>
+        <div className={styles.imageContainer}>
+          <Image
+            src="/img/heroSection/salon_automne.jpg"
+            alt="Ticket Salon d'Automne 2024"
+            width={400}
+            height={200}
+          />
+        </div>
+        <div className={styles.title}>
+          {i18n[language].hero.title}
         </div>
       </div>
     </div>
