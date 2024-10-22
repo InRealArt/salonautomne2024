@@ -80,7 +80,8 @@ export interface I18nContextType {
       testimonials: {
         title: string,
         artist1: string,
-        artist2: string
+        artist2: string,
+        ranking: string
       }
       ,
       partners: {
@@ -184,8 +185,9 @@ const i18n: I18nContextType['i18n'] = {
     },
     testimonials: {
       title: `Testimonials`,
-      artist1: "With InRealArt, I can take the Dream to the pinnacle of its art and pass on my heritage in a timeless way through these canvases. It's a unique opportunity to merge tradition and innovation, offering a new dimension to my work.",
-      artist2: "Thanks to InRealArt, I can take my artistic vision and pop art to new horizons and share my innovative work with the whole world. It's a privilege to be part of this revolution, where each work transcends time and finds its place in the future of art."
+      artist1: `“With InRealArt, I can take the Dream to the pinnacle of its art and pass on my heritage in a timeless way through these canvases. It's a unique opportunity to merge tradition and innovation, offering a new dimension to my work.“`,
+      artist2: `“Thanks to InRealArt, I can take my artistic vision and pop art to new horizons and share my innovative work with the whole world. It's a privilege to be part of this revolution, where each work transcends time and finds its place in the future of art.“`,
+      ranking: 'contemporary style Classification'
     },
     partners: {
       title: `They trust us`
@@ -286,8 +288,10 @@ const i18n: I18nContextType['i18n'] = {
     },
     testimonials: {
       title: `Témoignages`,
-      artist1: "Avec InRealArt, je peux porter le Rêve au sommet de son art et transmettre mon héritage de manière intemporelle à travers ces toiles. C'est une opportunité unique de fusionner tradition et innovation, offrant une nouvelle dimension à mon travail.",
-      artist2: "Grâce à InRealArt, je peux propulser ma vision artistique et le pop-art vers de nouveaux horizons et partager mon travail innovant avec le monde entier. C’est un privilège d’intégrer cette révolution, où chaque œuvre transcende le temps et trouve sa place dans l’avenir de l’art."
+      artist1: `“Avec InRealArt, je peux porter le Rêve au sommet de son art et transmettre mon héritage de manière intemporelle à travers ces toiles. 
+                C&#039;est une opportunité unique de fusionner tradition et innovation, offrant une nouvelle dimension à mon travail.”`,
+      artist2: `“Grâce à InRealArt, je peux propulser ma vision artistique et le pop-art vers de nouveaux horizons et partager mon travail innovant avec le monde entier. C’est un privilège d’intégrer cette révolution, où chaque œuvre transcende le temps et trouve sa place dans l’avenir de l’art.“`,
+      ranking: 'Class. Style contemporain'
     },
     partners: {
       title: `Ils nous font confiance`

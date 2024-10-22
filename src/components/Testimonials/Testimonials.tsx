@@ -28,16 +28,10 @@ const Testimonials = () => {
           </div>
           <div className={styles.artistText1}>
               <span className={styles.artistText11}>
-                “Avec InRealArt, je peux porter le Rêve au sommet de son art et
-                transmettre mon héritage de manière intemporelle à travers ces
-                toiles. C&#039;est une opportunité unique de fusionner tradition
-                et innovation, offrant une nouvelle dimension à mon travail.”
+                {parse(i18n[language].testimonials.artist1)}
                 <br />
               </span>
-              <span
-                className={styles.artistText13}>
-                Class. Style contemporain
-              </span>
+              <span className={styles.artistText13}>{parse(i18n[language].testimonials.ranking)}</span>
               <span
                 className={styles.artistText14}>
                  TOP 4 I-CAC
@@ -56,15 +50,11 @@ const Testimonials = () => {
             className={styles.artistText2}>
             <span>
               <span className={styles.artistText21}>
-                “Grâce à InRealArt, je peux propulser ma vision artistique et le
-                pop-art vers de nouveaux horizons et partager mon travail innovant
-                avec le monde entier. C’est un privilège d’intégrer cette
-                révolution, où chaque œuvre transcende le temps et trouve sa place
-                dans l’avenir de l’art.
+                {parse(i18n[language].testimonials.artist2)}
                 <br />
                 <br />
               </span>
-              <span className={styles.artistText22}> Class. Style contemporain</span>
+              <span className={styles.artistText22}> {parse(i18n[language].testimonials.ranking)}</span>
               <span className={styles.artistText23}>
                  TOP 17 I-CAC
               </span>
