@@ -16,7 +16,7 @@ const Testimonials = () => {
   <div className={styles.container}>
     <div className={styles.wrapperText}>
       <div className={styles.titleContainer}>
-        <div className={styles.title}>Témoignages</div>
+        <div className={styles.title}>{parse(i18n[language].testimonials.title)}</div>
       </div>
     </div>
     <div className={styles.containerTestimonials}>
