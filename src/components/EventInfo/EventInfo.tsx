@@ -18,6 +18,7 @@ export default function EventInfo() {
       </div>
       <div className={styles.eventInfoItem2}>
         <p className={styles.date}>{parse(i18n[language].eventInfo.date)}</p>
+        <p className={styles.date}>{parse(i18n[language].eventInfo.place)}</p>
       </div>
       <div className={styles.button}>
         <div className={styles.buttonText}>

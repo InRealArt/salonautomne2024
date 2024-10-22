@@ -14,6 +14,7 @@ export interface I18nContextType {
       eventInfo: {
         title: string,
         date: string,
+        place: string,
         button: string
       }
       artist: {
@@ -77,11 +78,12 @@ export interface I18nContextType {
 const i18n: I18nContextType['i18n'] = {
   en: {
     hero: {
-      title: 'Autumn with the artist Catherine Sénéchal and InReal Art',
+      title: "Salon d'Automne 2024 An exclusive program with artist Catherine Sénéchal and InRealArt",
     },
     eventInfo: {
-      title: "InReal Art 2024 catalog <br/> Sénéchal",
+      title: "Come and meet Catherine Sénéchal <br>and her works at the prestigious Salon d'Automne 2024.",
       date: "When : from october 23 to 27",
+      place: "Where : Booth B4",
       button: "Download the free exclusive catalog"
     },
     artist: {
@@ -141,11 +143,12 @@ const i18n: I18nContextType['i18n'] = {
   },
   fr: {
     hero: {
-      title: 'L’Automne avec l’artiste Catherine Sénéchal et InReal Art',
+      title: "Salon d’Automne 2024 Un programme exclusif avec l'artiste avec l’artiste Catherine Sénéchal et InRealArt",
     },
     eventInfo: {
-      title: "Catalogue InReal Art 2024 <br/> Sénéchal",
+      title: "Lors du prestigieux salon d'Automne 2024, <br>venez rencontrer Catherine Sénéchal et ses oeuvres",
       date: "Quand : du 23 au 27 octobre 2024",
+      place: "Où : Emplacement B4",
       button: "Téléchargez gratuitement le catalogue exclusif"
     },
     artist: {
