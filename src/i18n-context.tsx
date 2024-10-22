@@ -110,21 +110,21 @@ export interface I18nContextType {
 const i18n: I18nContextType['i18n'] = {
   en: {
     hero: {
-      title: "Salon d'Automne 2024 An exclusive program with artist Catherine Sénéchal and InRealArt",
+      title: "Salon d'Automne 2024 : Exclusive program with Catherine Sénéchal and InRealArt",
     },
     eventInfo: {
-      title: "Come and meet Catherine Sénéchal <br>and her works at the prestigious Salon d'Automne 2024.",
+      title: "Meet Catherine Sénéchal through her amazing paintings <br> during the prestigious Salon d'Automne 2024.",
       date: "When : from october 23 to 27",
-      place: "Where : Booth B4",
-      button: "Download the free exclusive catalog"
+      place: "Where : Booth 52",
+      button: "FREE and Exclusive catalog"
     },
     artist: {
       title: `“What you see makes you happy, it's all there” <br> Catherine Sénéchal`,
       text1: ``,
-      text2: `Discover the refined world of Catherine Sénéchal, a contemporary artist who combines boldness and elegance. Her vibrant, intuitive works captivate with their visual richness and sincerity. Inspired by Brancusi, she offers a unique sensory experience, where tradition and modernity meet. To acquire a piece by Catherine is to enter an exclusive circle of contemporary art, combining emotion and rarity.`,
+      text2: `Discover the refined world of Catherine Sénéchal, a contemporary artist who combines boldness and elegance. Her vibrant, intuitive works captivate with their visual richness and sincerity. Inspired by Brancusi, she offers a unique sensory experience, where tradition and modernity meet. Acquiring a painting from Catherine is an incredible momentum to enter an exclusive circle of contemporary art, combining emotion and rarity.`,
     },
     expert: {
-      title: `Sénéchal sees colors <br> as a symbol of joy, life and energy <br>...`,
+      title: `Sénéchal perceives colors <br> as a symbol of joy, life and energy <br>...`,
       words: `... a vitality that permeates his work. Her bold compositions - portraits, interiors, still lifes, urban landscapes and geometrically inspired works - express human emotions, from joy to sorrow. Through her art, she invites viewers to feel and explore their own feelings”`,
       name: `Meulemans Catherine `,
       role: `Head of Sales Founder Galerie Art Thema`
@@ -160,7 +160,7 @@ const i18n: I18nContextType['i18n'] = {
       stat38: ` `,
       stat39: ` `,
       stat310: `<br></br>`,
-      stat41: `of our artists feature in the ICAC 50-60 ranking.`,
+      stat41: `of our artists featured in the ICAC 50-60 ranking.`,
       stat42: ``,
       stat43: ``,
       stat44: ``,
@@ -170,11 +170,11 @@ const i18n: I18nContextType['i18n'] = {
       stat48: ` `,
       stat49: ` `,
       stat410: `<br></br>`,
-      title: 'The InRealArt catalog is'
+      title: 'Browsing InReal Art’s catalog'
     },
     whyChooseUS: {
-      title: "Why choose us ?",
-      subTitle: "Explore a unique collection of physical paintings and rare sculpture, <br /> their digital copies (NFT), accompanied by their copyrights.",
+      title: "Why choosing us ?",
+      subTitle: "Explore a unique collection of physical paintings and rare sculpture, <br> their digital copies (NFT), accompanied by their copyrights.",
       cardText1: `With over 80 years of combined experience, our team selects
       less than 100 works by renowned artists, chosen for their uniqueness
       and their ability to enrich a collection.
@@ -205,7 +205,7 @@ const i18n: I18nContextType['i18n'] = {
     },
     testimonials: {
       title: `Testimonials`,
-      artist1: `“With InRealArt, I can take the Dream to the pinnacle of its art and pass on my heritage in a timeless way through these canvases. It's a unique opportunity to merge tradition and innovation, offering a new dimension to my work.“`,
+      artist1: `“With InRealArt, I can take Pictural Reverism to the pinnacle of its art and pass on my heritage in a timeless way through these canvases. It's a unique opportunity to merge tradition and innovation, offering a new dimension to my work.“`,
       artist2: `“Thanks to InRealArt, I can take my artistic vision and pop art to new horizons and share my innovative work with the whole world. It's a privilege to be part of this revolution, where each work transcends time and finds its place in the future of art.“`,
       ranking: 'contemporary style Classification'
     },
@@ -232,7 +232,7 @@ const i18n: I18nContextType['i18n'] = {
     eventInfo: {
       title: "Lors du prestigieux salon d'Automne 2024, <br>venez rencontrer Catherine Sénéchal et ses oeuvres",
       date: "Quand : du 23 au 27 octobre 2024",
-      place: "Où : Emplacement B4",
+      place: "Où : Emplacement 52",
       button: "Téléchargez gratuitement le catalogue exclusif"
     },
     artist: {
