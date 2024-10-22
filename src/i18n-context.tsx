@@ -72,7 +72,10 @@ export interface I18nContextType {
       },
       whyChooseUS: {
         title: string,
-        subTitle: string
+        subTitle: string,
+        cardText1: string,
+        cardText2: string,
+        cardText3: string,
       },
       testimonials: {
         artist1: string,
@@ -147,8 +150,32 @@ const i18n: I18nContextType['i18n'] = {
       stat410: `<br></br>`      
     },
     whyChooseUS: {
-      title: "Why download our catalogue ?",
-      subTitle: "Explore a unique collection of physical paintings and rare sculpture, <br /> their digital copies (NFT), accompanied by their copyrights."
+      title: "Why choose us ?",
+      subTitle: "Explore a unique collection of physical paintings and rare sculpture, <br /> their digital copies (NFT), accompanied by their copyrights.",
+      cardText1: `With over 80 years of combined experience, our team selects
+      less than 100 works by renowned artists, chosen for their uniqueness
+      and their ability to enrich a collection.
+      <br />
+      <br />
+      Whether you're a novice or a seasoned collector, acquiring these rare pieces
+      is a privilege, offering distinction and value to your collection.`,
+      cardText2: `Our marketplace innovates by integrating physical works, NFTs and fractional
+      fractional copyrights.
+      <br />
+      <br />
+      Thanks to blockchain, we ensure transparent and secure transactions
+      transactions, guaranteeing the traceability of works. This approach enables
+      collectors access to a unique and diverse art market.
+      market.`,
+      cardText3: `Art is both a passion and an investment opportunity.
+      investment opportunity. Our platform enables you to diversify your portfolio
+      portfolio with physical, digital and copyright works.
+      rights.
+      <br />
+      <br />
+      The rarity of the pieces on offer offers potential for appreciation. Whether
+      whether you&#039;re a novice or an expert, you&#039;re entering a market where art can become
+      become a source of lasting value.`,
     },
     testimonials: {
       artist1: "With InRealArt, I can take the Dream to the pinnacle of its art and pass on my heritage in a timeless way through these canvases. It's a unique opportunity to merge tradition and innovation, offering a new dimension to my work.",
@@ -220,8 +247,33 @@ const i18n: I18nContextType['i18n'] = {
 
     },
     whyChooseUS: {
-      title: "Pourquoi télécharger notre catalogue ?",
-      subTitle: "Explorez une collection unique de toiles physiques et de sculpture rare, <br /> de leurs copies numériques (NFT), accompagnées de leurs droits d'auteur."
+      title: "Pourquoi nous choisir ?",
+      subTitle: "Explorez une collection unique de toiles physiques et de sculpture rare, <br /> de leurs copies numériques (NFT), accompagnées de leurs droits d'auteur.",
+      cardText1: `Avec plus de 80 ans d&#039;expérience cumulée, notre équipe sélectionne
+      moins de 100 œuvres d&#039;artistes renommés, choisies pour leur unicité
+      et leur capacité à enrichir une collection.
+      <br />
+      <br />
+      Que vous soyez collectionneur novice ou aguerri, acquérir ces pièces rares
+      est un privilège, offrant distinction et valeur à votre collection.`,
+      cardText2: `Notre marketplace innove en intégrant des œuvres physiques, des NFTs et
+      des droits d&#039;auteur fractionnés.
+      <br />
+      <br />
+      Grâce à la blockchain, nous assurons des transactions transparentes et
+      sécurisées, garantissant la traçabilité des œuvres. Cette approche permet
+      aux collectionneurs d&#039;accéder à un marché artistique unique et
+      diversifié.`,
+      cardText3: `L&#039;Art est à la fois une passion et une opportunité
+      d&#039;investissement. Notre plateforme vous permet de diversifier votre
+      portefeuille avec des œuvres physiques, numériques, et des droits
+      d&#039;auteur.
+      <br />
+      <br />
+      La rareté des pièces proposées offre un potentiel d&#039;appréciation. Que
+      vous soyez novice ou expert, vous accédez à un marché où l&#039;art peut
+      devenir une source de valorisation durable.`,
+
     },
     testimonials: {
       artist1: "Avec InRealArt, je peux porter le Rêve au sommet de son art et transmettre mon héritage de manière intemporelle à travers ces toiles. C'est une opportunité unique de fusionner tradition et innovation, offrant une nouvelle dimension à mon travail.",

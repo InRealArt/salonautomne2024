@@ -26,17 +26,7 @@ const WhyChooseUs = () => {
 
           <div className={styles.cardTitle}>Very Rare</div>
           <div className={styles.cardText}>
-            Forte de plus de 80 ans d’expérience d’années cumulées, notre équipe
-            sélectionne moins de 100 œuvres d’artistes renommés.
-            <br />
-            <br />
-            Chaque pièce, soigneusement choisie, est sélectionnée pour son
-            caractère unique et son potentiel à enrichir une collection.
-            <br />
-            <br />
-            Pour les collectionneurs, qu’ils soient expérimentés ou novices,
-            acquérir des œuvres rares est un privilège permettant de se démarquer
-            tout en donnant une valeur significative à leur collection.
+            {parse(i18n[language].whyChooseUS.cardText1)}
           </div>
         </div>
         <div className={styles.card}>
