@@ -90,10 +90,8 @@ interface I18nProviderProps {
   children: ReactNode;
 }
 
-export const I18nProvider = ({ children }: I18nProviderProps) => {  
-  const [language, setLanguage] = useState<Language>(
-    (navigator.language?.slice(0, 2) as Language) || 'en'
-  );
+export const I18nProvider = ({ children }: I18nProviderProps) => {
+  const [language, setLanguage] = useState<Language>('en');
 
   return (
     <I18nContext.Provider value={{ language, setLanguage, i18n }}>
