@@ -20,25 +20,19 @@
   max-width: 100%;
 }
 .expert {
-  border-radius: 2.96875rem;
+  border-radius: 50%;
   border-width: 0.125rem;
   align-self: stretch;
   flex: 1;
   position: relative;
-  padding: 0 60px;
-  background: #d9d9d9;
   border: 1px solid #000000;
+  max-width: 360px;
+  max-height: 360px;
 }
 .containerExpert {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: 41.8125rem;
-  position: relative;
-  max-width: 90%;
 }
 .expertTitleWords {
   display: flex;

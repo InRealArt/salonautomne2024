@@ -7,7 +7,8 @@
   }
   
   .imageSection {
-    min-width: 400px;
+    position: relative;
+    max-width: 450px;
     height: max-content;
     flex: 1;
     background-color: white;
@@ -15,13 +16,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    right: -150px;
+    border-radius: 20px;
   }
   
   .formSection {
     flex: 1;
     background-color: #F5F4F4;
-    padding: 40px;
+    padding: 40px 40px 40px 200px;
     color: white;
+    border-radius: 15px;
   }
   
   .title {
@@ -44,7 +48,6 @@
     font-size: var(--heading-text-paragraphe-font-size, 1rem);
     font-weight: var(--heading-text-paragraphe-font-weight, 400);
     position: relative;
-    height: 3.75rem;
   }
   
   .form {
@@ -98,5 +101,8 @@
     }
     .formSection {
       padding: 20px;
+    }
+    .imageSection {
+      right: 0;
     }
   }
