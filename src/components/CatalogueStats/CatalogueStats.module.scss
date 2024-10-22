@@ -71,10 +71,10 @@
 }
 
 .statDescription .boldText {
-  color: var(--primaire-black, #000035);
-  font-family: var(--catalogue-stats-bold-text-font-family);
-  font-size: var(--catalogue-stats-bold-text-font-size);
-  font-weight: var(--catalogue-stats-bold-text-font-weight);
+  color: #000035;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .statDescription {

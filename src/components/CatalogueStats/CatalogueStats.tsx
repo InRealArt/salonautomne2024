@@ -1,7 +1,13 @@
+'use client'
 import React from 'react';
 import styles from './CatalogueStats.module.scss';
+import { I18nContext } from '@/i18n-context';
+import { useContext } from 'react';
+import parse from 'html-react-parser';
 
 const CatalogueStats = () => {
+  const { language, i18n } = useContext(I18nContext)
+
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Le catalogue InRealArt c'est</h2>
@@ -9,54 +15,53 @@ const CatalogueStats = () => {
         <div className={styles.statItem}>
           <div className={styles.statNumber}>10 +</div>
           <div className={styles.statDescription}>
-            <span className={styles.normalText}>C'est le </span>
-            <span className={styles.boldText}> nombre d'artistes </span>
-            <span className={styles.normalText}>qui ont été </span>
-            <span className={styles.boldText}> sélectionnés  </span>
-            <span className={styles.normalText}>pour rejoindre l'aventure IRA en mettant à disposition des </span>
-            <span className={styles.boldText}>œuvres uniques </span>
-            <span className={styles.normalText}>et</span>
-            <span className={styles.boldText}> rares</span>
+            <span className={styles.normalText}>{parse(i18n[language].stats.stat11)}</span>
+            <span className={styles.boldText}> {parse(i18n[language].stats.stat12)} </span>
+            <span className={styles.normalText}>{parse(i18n[language].stats.stat13)}</span>
+            <span className={styles.boldText}> {parse(i18n[language].stats.stat14)}</span>
+            <span className={styles.normalText}>{parse(i18n[language].stats.stat15)} </span>
+            <span className={styles.boldText}>{parse(i18n[language].stats.stat16)}</span>
+            <span className={styles.normalText}>{parse(i18n[language].stats.stat17)}</span>
+            <span className={styles.boldText}> {parse(i18n[language].stats.stat18)}</span>.
+            <br></br><br></br>
           </div>
         </div>
         <div className={styles.statItem}>
           <div className={styles.statNumber}>&lt; 100</div>
           <div className={styles.statDescription}>
-            <span className={styles.normalText}>C'est le </span>
-            <span className={styles.boldText}> nombre d'œuvres</span>
-            <span className={styles.normalText}>que nous avons choisies pour</span>
-            <span className={styles.boldText}> votre collection</span>
-            <span className={styles.normalText}>, que vous soyez un</span>
-            <span className={styles.boldText}>novice, collectionneur ou expert </span>
+            <span className={styles.normalText}>{parse(i18n[language].stats.stat21)}</span>
+            <span className={styles.boldText}> {parse(i18n[language].stats.stat21)}</span>
+            <span className={styles.normalText}>{parse(i18n[language].stats.stat23)}</span>
+            <span className={styles.boldText}> {parse(i18n[language].stats.stat24)}</span>
+            <span className={styles.normalText}>{parse(i18n[language].stats.stat24)}</span>
+            <span className={styles.boldText}></span>
           </div>
         </div>
         <div className={styles.statItem}>
           <div className={styles.statNumber}>5000 +</div>
           <div className={styles.statDescription}>
-            <span className={styles.normalText}>C'est le</span>
-            <span className={styles.boldText}> nombre de testeurs internationaux </span>
-            <span className={styles.normalText}>qui se sont inscrits pour </span>
-            <span className={styles.boldText}> évaluer et tester </span>
-            <span className={styles.normalText}>notre </span>
-            <span className={styles.boldText}>marketplace innovante </span>
+            <span className={styles.normalText}>{parse(i18n[language].stats.stat31)}</span>
+            <span className={styles.boldText}>{parse(i18n[language].stats.stat32)}</span>
+            <span className={styles.normalText}>{parse(i18n[language].stats.stat33)}</span>
+            <span className={styles.boldText}>{parse(i18n[language].stats.stat34)}</span>
+            <span className={styles.normalText}>{parse(i18n[language].stats.stat35)}</span>
+            <span className={styles.boldText}>{parse(i18n[language].stats.stat36)}</span>
             <br></br><br></br>
-            
           </div>
         </div>
         <div className={styles.statItem}>
           <div className={styles.statNumberBig}>70 %</div>
           <div className={styles.statDescription}>
-            <span className={styles.normalText}>C'est la</span>
-            <span className={styles.boldText}> part d'artistes </span>
-            <span className={styles.normalText}>ayant</span>
-            <span className={styles.boldText}> une cote</span>
-            <span className={styles.normalText}>dans le  </span>
-            <span className={styles.boldText}>top 60 I-CAC </span>
-            <span className={styles.normalText}>selon leurs </span>
-            <span className={styles.boldText}>indices respectifs. Deux artistes </span>
-            <span className={styles.normalText}>figurent dans le </span>
-            <span className={styles.boldText}>top 10</span>
-             
+            <span className={styles.normalText}></span>
+            <span className={styles.boldText}> </span>
+            <span className={styles.normalText}></span>
+            <span className={styles.boldText}> </span>
+            <span className={styles.normalText}></span>
+            <span className={styles.boldText}></span>
+            <span className={styles.normalText}></span>
+            <span className={styles.boldText}></span>
+            <span className={styles.normalText}></span>
+            <span className={styles.boldText}></span>
           </div>
         </div>
       </div>
