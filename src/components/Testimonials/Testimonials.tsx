@@ -1,8 +1,16 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
 import styles from './Testimonials.module.scss';
+import { I18nContext } from '@/i18n-context';
+import { useContext } from 'react';
+import parse from 'html-react-parser';
+
 
 const Testimonials = () => {
+
+  const { language, i18n } = useContext(I18nContext)
+  
   return (
 
   <div className={styles.container}>

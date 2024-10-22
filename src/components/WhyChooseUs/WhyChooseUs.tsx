@@ -1,17 +1,22 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
 import styles from './WhyChooseUs.module.scss';
 import { CircleDollarSign, Gem, ThumbsUp } from 'lucide-react';
+import { I18nContext } from '@/i18n-context';
+import { useContext } from 'react';
+import parse from 'html-react-parser';
 
 const WhyChooseUs = () => {
+  
+
+  const { language, i18n } = useContext(I18nContext)
+  
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Pourquoi nous choisir ?</h2>
+      <h2 className={styles.title}>{parse(i18n[language].whyChooseUS.title)}</h2>
       <div className={styles.subtitle}>
-          Explorez une collection unique de toiles physiques et de sculpture rare,
-        <br />
-        de leurs copies numériques (NFT), accompagnées de leurs droits
-        d&#039;auteur.
+        {parse(i18n[language].whyChooseUS.subTitle)}
       </div>
       <div className={styles.cardsContainer}>
         <div className={styles.card}>

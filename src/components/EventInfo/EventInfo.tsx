@@ -1,20 +1,28 @@
+'use client'
 import styles from './EventInfo.module.scss';
 import Link from "next/link";
+import { I18nContext } from '@/i18n-context';
+import { useContext } from 'react';
+import parse from 'html-react-parser';
+
 
 export default function EventInfo() {
+  const { language, i18n } = useContext(I18nContext)
+
   return (
     <div className={styles.eventInfoContainer}>
       <div className={styles.eventInfoItem1}>
-        <h2 className={styles.title}>Catalogue InReal Art 2024 <br/>
-          Sénéchal &amp;</h2>
+        <h2 className={styles.title}>
+          {parse(i18n[language].eventInfo.title)}
+        </h2>
       </div>
       <div className={styles.eventInfoItem2}>
-        <p className={styles.date}>Quand : du 23 au 27 octobre 2024</p>
+        <p className={styles.date}>{parse(i18n[language].eventInfo.date)}</p>
       </div>
       <div className={styles.button}>
         <div className={styles.buttonText}>
           <Link href={`#catalogueRequest`}>
-            Téléchargez gratuitement le catalogue exclusif
+            {parse(i18n[language].eventInfo.button)}
           </Link>  
         </div>
       </div>
