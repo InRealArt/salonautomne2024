@@ -6,7 +6,7 @@ import { I18nContext } from '@/i18n-context';
 import { useContext } from 'react';
 
 export default function ImageHeader() {
-  const { language, i18n } = useContext(I18nContext);
+  const { language, i18n } = useContext(I18nContext)
 
   return (
     <div className={styles.header}>
