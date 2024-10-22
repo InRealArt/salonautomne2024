@@ -47,23 +47,19 @@
 .expertTitle {
   color: #000000;
   text-align: left;
-  font-family: "Aclonica-Regular", sans-serif;
+  font-family: "Aclonica", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   position: relative;
+  height: 6rem;
 }
 
 .expertWords {
   color: #000000;
-  text-align: left;
-  font-family: var(--heading-text-paragraphe-font-family, "Montserrat", sans-serif);
-  font-size: var(--heading-text-paragraphe-font-size, 1rem);
-  font-weight: var(--heading-text-paragraphe-font-weight, 400);
-  position: relative;
-  align-self: stretch;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .identityExpertContainer {

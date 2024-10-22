@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './ArtistProfile.module.scss';
 import { I18nContext } from '@/i18n-context';
 import { useContext } from 'react';
-
+import parse from 'html-react-parser';
 
 export default function ArtistProfile() {
   const { language, i18n } = useContext(I18nContext)
@@ -12,9 +12,8 @@ export default function ArtistProfile() {
       <div className={`${styles.content} ${styles.contentBackground}`}>
 
         <div className={styles.text}>
-        <div className={styles.artistName}>Catherine Sénéchal</div>
-          <p>{i18n[language].artist.text1}</p>
-          <p>{i18n[language].artist.text2}</p>
+        <div className={styles.artistName}>{parse(i18n[language].artist.title)}</div>
+          <div>{parse(i18n[language].artist.text2)}</div>
         </div>
         <div className={styles.images}>
           <div className={styles.artistArtwork}>

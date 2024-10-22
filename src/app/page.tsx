@@ -22,6 +22,7 @@ export default function Home() {
       <ArtistProfile />
       <WhyChooseUs/>
       <Expertise/>
+      <CatalogueStats/>
       <Testimonials/>
       <TrustedPartners/>
       <CatalogueRequest/>
