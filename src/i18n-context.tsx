@@ -191,14 +191,14 @@ const i18n: I18nContextType['i18n'] = {
       collectors access to a unique and diverse art market.
       market.`,
       cardText3: `Art is both a passion and an investment opportunity.
-      investment opportunity. Our platform enables you to diversify your portfolio
-      portfolio with physical, digital and copyright works.
-      rights.
-      <br />
-      <br />
-      The rarity of the pieces on offer offers potential for appreciation. Whether
-      whether you&#039;re a novice or an expert, you&#039;re entering a market where art can become
-      become a source of lasting value.`,
+        Our platform enables you to diversify your portfolio
+        portfolio with physical, digital and copyright works.
+        rights.
+        <br />
+        <br />
+        The rarity of the pieces on offer offers potential for appreciation. Whether
+        you&#039;re a novice or an expert, you&#039;re entering a market where art can become
+        become a source of lasting value.`,
       cardTitle1: 'Very Rare',
       cardTitle2: 'A Unique Marketplace',
       cardTitle3: 'Investment opportunity'
