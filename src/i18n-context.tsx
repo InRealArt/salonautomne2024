@@ -101,7 +101,8 @@ export interface I18nContextType {
       },
       toast: {
         errorEmail: string,
-        errorName: string
+        errorName: string,
+        catalogueRequestSuccess: string
       }
     };
   };
@@ -222,7 +223,8 @@ const i18n: I18nContextType['i18n'] = {
     },
     toast: {
       errorEmail: 'E-mail is not in the correct format',
-      errorName: 'Name is mandatory'
+      errorName: 'Name is mandatory',
+      catalogueRequestSuccess: "Thank you for your participation. We'll be in touch soon."
     }
   },
   fr: {
@@ -340,7 +342,8 @@ const i18n: I18nContextType['i18n'] = {
     },
     toast: {
       errorEmail: "Le format de l'e-mail est incorrect",
-      errorName: "Le nom est obligatoire"
+      errorName: "Le nom est obligatoire",
+      catalogueRequestSuccess: 'Merci pour votre participation. Nous vous contacterons très prochainement.'
     }
   },
 };

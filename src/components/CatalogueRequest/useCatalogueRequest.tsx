@@ -45,7 +45,7 @@ const useCatalogueRequest = () => {
             console.log("data : ", data)
             // Popup a succes toast if no errors.
             toast({
-              title: "Merci pour votre participation. Nous vous contacterons très prochainement.",
+              title: parse(i18n[language].toast.catalogueRequestSuccess),
               description: '',
               status: 'success',
               duration: 3000,
