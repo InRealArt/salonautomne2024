@@ -10,6 +10,7 @@ import GoogleCaptchaWrapper from "./captcha/google-captcha-wrapper";
 import { Providers } from "./providers";
 import LanguageChanger from "@/components/LanguageChanger/LanguageChanger";
 import { I18nProvider } from "@/i18n-context";
+import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,6 +36,7 @@ export default async function RootLayout({
 
   return (
     <html lang='en'>
+      <GoogleAnalytics />
       <GoogleCaptchaWrapper>
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
           <Providers>
