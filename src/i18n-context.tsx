@@ -183,8 +183,7 @@ const i18n: I18nContextType['i18n'] = {
       <br />
       Whether you're a novice or a seasoned collector, acquiring these rare pieces
       is a privilege, offering distinction and value to your collection.`,
-      cardText2: `Our marketplace innovates by integrating physical works, NFTs and fractional
-      fractional copyrights.
+      cardText2: `Our marketplace innovates by integrating physical works, NFTs and fractional copyrights.
       <br />
       <br />
       Thanks to blockchain, we ensure transparent and secure transactions
